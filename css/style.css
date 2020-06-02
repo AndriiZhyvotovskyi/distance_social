@@ -23,6 +23,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 .container {}
 
 .header {
@@ -34,8 +38,26 @@ a {
 .header-block {
     max-width: 1200px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 .search-input {
+    padding: 5px 30px 5px 12px;
     width: 100%;
+    width: 336px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-image: url(../img/search-icon.svg);
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+}
+
+input::placeholder {
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 22px;
+    color: #BFBFBF;
 }
